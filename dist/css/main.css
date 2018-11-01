@@ -1,0 +1,199 @@
+.navbar {
+  background: black;
+  width: 100%;
+  max-width: 1400px;
+  height: 73px;
+  position: fixed;
+  top: 0;
+  z-index: 3; }
+  .navbar__logo {
+    float: left;
+    margin: 18px;
+    margin-left: 150px; }
+  .navbar__ul {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+    float: right;
+    padding-right: 125px; }
+  .navbar__li {
+    display: inline;
+    padding: 20px 25px;
+    font-weight: bold; }
+  .navbar__link {
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: all 0.5s ease-out;
+    font-size: 14px; }
+    .navbar__link:hover {
+      color: #f48936;
+      font-size: 20px; }
+  .navbar__sidemenu {
+    display: none; }
+  .navbar:after {
+    content: '';
+    clear: both; }
+
+.mobile-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .mobile-nav__link {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s; }
+    .mobile-nav__link:hover {
+      color: #f48936;
+      font-size: 30px; }
+  .mobile-nav__closebtn {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 1400px;
+  margin: auto;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif; }
+
+.first-screen {
+  margin-top: 73px;
+  height: 640px;
+  max-width: 1400px;
+  width: 100vw;
+  padding: 105px 135px 150px 150px;
+  background-image: url(../images/first-screen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken; }
+  .first-screen:after {
+    content: '';
+    clear: both; }
+
+.showcase {
+  float: left;
+  color: #fff;
+  font-family: 'Raleway', sans-serif; }
+  .showcase__header {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: inherit; }
+  .showcase__subheader {
+    width: 500px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 23px; }
+  .showcase__btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 35px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-out; }
+    .showcase__btn:hover {
+      border: 2px solid #d7f2fb;
+      box-shadow: 0 0 20px 10px rgba(72, 94, 116, 0.7);
+      text-shadow: 0px 0px 10px white; }
+
+.signup {
+  float: right;
+  height: 360px;
+  width: 360px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 35px;
+  margin-right: 25px; }
+  .signup__header {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    background: #f3f3f3;
+    padding: 10px 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .signup__free {
+    color: #ff984c;
+    text-transform: uppercase; }
+  .signup__form {
+    padding: 0 50px 35px 35px;
+    text-align: left; }
+  .signup__input {
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px; }
+    .signup__input:focus {
+      outline: none; }
+  .signup__footer {
+    background: #ff9744;
+    margin-top: 10px;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .signup__submit {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px; }
+
+@media (max-width: 1240px) {
+  .first-screen {
+    padding: 0;
+    padding-top: 105px; }
+  .showcase {
+    margin-left: 40px; }
+  .signup {
+    margin-right: 20px; } }
+
+@media (max-width: 940px) {
+  .navbar__sidemenu {
+    position: absolute;
+    display: inline;
+    top: 20px;
+    right: 20px; }
+  .navbar__logo {
+    float: none;
+    margin-left: 10%; }
+  .navbar__ul {
+    display: none; }
+  .first-screen {
+    padding-top: 50px; }
+  .signup {
+    display: none; }
+  .showcase {
+    float: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0; }
+    .showcase__subheader {
+      width: 70%;
+      padding: 0 20px;
+      margin: auto; } }

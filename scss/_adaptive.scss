@@ -1,0 +1,61 @@
+@media (max-width: 1240px) {
+
+	.first-screen {
+		padding: 0;
+		padding-top: 105px;
+
+	}
+
+	.showcase {
+		margin-left: 40px;
+	}
+
+	.signup {
+		margin-right: 20px;
+	}
+
+}
+
+
+@media (max-width: 940px) {
+
+    .navbar__sidemenu {
+      position: absolute;
+      display: inline;
+      top: 20px;
+      right: 20px;
+    }
+
+        .navbar__logo {
+          float: none;
+          margin-left: 10%;
+        }
+
+        .navbar__ul {
+          display: none;
+        }
+
+	.first-screen {
+        padding-top: 50px;
+    }
+
+	.signup {
+	      display: none;
+    }
+
+
+    .showcase {
+      float: none;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+	  margin: 0;
+
+      &__subheader {
+          width: 70%;
+		  padding: 0 20px;
+		  margin: auto;
+       }
+    }
+
+}

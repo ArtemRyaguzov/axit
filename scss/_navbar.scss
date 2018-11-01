@@ -1,0 +1,91 @@
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+.navbar {
+    background: black;
+    width: 100%;
+    max-width: 1400px;
+    height: 73px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    &__logo {
+        float: left;
+        margin: 18px;
+        margin-left: 150px;
+    }
+
+    &__ul {
+        margin: 0;
+        padding: 25px;
+        list-style: none;
+        float: right;
+        padding-right: 125px;
+    }
+
+    &__li {
+        display: inline;
+        padding: 20px 25px;
+        font-weight: bold;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #f4f4f4;
+        @include easeOut;
+        font-size: 14px;
+
+        &:hover {
+            color: #f48936;
+            font-size: 20px;
+        }
+    }
+
+    &__sidemenu {
+        display: none;
+    }
+
+    &:after {
+      content: '';
+      clear: both;
+    }
+}
+
+
+.mobile-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	background: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+
+    &__link {
+        padding: 10px 10px 10px 30px;
+    	text-decoration: none;
+    	font-size: 22px;
+    	color: #ccc;
+    	display: block;
+    	transition: 0.3s;
+
+        &:hover {
+            color: #f48936;
+        	font-size: 30px;
+        }
+    }
+
+    &__closebtn {
+        position: absolute;
+    	top: 0;
+    	right: 22px;
+    	font-size: 36px;
+    	margin-left: 50px;
+    }
+}
