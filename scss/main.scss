@@ -1,5 +1,15 @@
 @import 'navbar';
 
+@mixin openModal {
+    animation-name: modalOpen;
+	animation-duration: 1s;
+
+	@keyframes modalOpen {
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -130,7 +140,88 @@ body {
 	}
 }
 
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	@include openModal;
 
+	&__closebtn {
+		color: #fff;
+		float: right;
+		font-size: 50px;
+		margin-right: 5%;
+		cursor: pointer;
+		@include easeOut;
+
+		&:hover {
+			text-shadow: 0px 0px 10px rgba(255,255,255,1);
+		}
+	}
+
+	&__signup {
+		height: 360px;
+		width: 360px;
+		text-align: center;
+		background: #fff;
+		border-radius: 5px;
+		margin: 20% auto;
+	}
+
+	&__signup-header {
+		font-size: 20px;
+		color: #333;
+		font-weight: bold;
+		background: #f3f3f3;
+		padding: 10px 0;
+		margin: 0;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	&__signup-free {
+		color: #ff984c;
+		text-transform: uppercase;
+	}
+
+	&__signup-form {
+		padding: 0 50px 35px 35px;
+		text-align: left;
+	}
+
+	&__signup-input {
+		border: none;
+		border-bottom: 1px solid #bdbdbd;
+		width: 100%;
+		padding: 10px;
+		margin-top: 40px;
+		font-size: 14px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__signup-footer {
+		background: #ff9744;
+		margin-top: 10px;
+		padding: 15px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	&__signup-submit {
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		font-size: 15px;
+	}
+}
 
 
 

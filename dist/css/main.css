@@ -163,6 +163,75 @@ body {
     font-weight: bold;
     font-size: 15px; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation-name: modalOpen;
+  animation-duration: 1s; }
+
+@keyframes modalOpen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .modal__closebtn {
+    color: #fff;
+    float: right;
+    font-size: 50px;
+    margin-right: 5%;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    .modal__closebtn:hover {
+      text-shadow: 0px 0px 10px white; }
+  .modal__signup {
+    height: 360px;
+    width: 360px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20% auto; }
+  .modal__signup-header {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    background: #f3f3f3;
+    padding: 10px 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .modal__signup-free {
+    color: #ff984c;
+    text-transform: uppercase; }
+  .modal__signup-form {
+    padding: 0 50px 35px 35px;
+    text-align: left; }
+  .modal__signup-input {
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px; }
+    .modal__signup-input:focus {
+      outline: none; }
+  .modal__signup-footer {
+    background: #ff9744;
+    margin-top: 10px;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .modal__signup-submit {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px; }
+
 @media (max-width: 1240px) {
   .first-screen {
     padding: 0;

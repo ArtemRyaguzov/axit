@@ -51,4 +51,16 @@ $('.mobile-nav__closebtn').click(function(e){
     $('.mobile-nav').css('width', '0');
 });
 
+// Modal
+
+$('.openmodal').click(function(e){
+    e.preventDefault();
+    $('.mobile-nav').css('width', '0');
+    $('.modal').css('display', 'block');
+});
+
+$('.modal__closebtn').click(function(){
+    $('.modal').css('display', '');
+});
+
 // End of Navigation scripts
