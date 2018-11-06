@@ -1,14 +1,6 @@
+@import 'config';
 @import 'navbar';
 
-@mixin openModal {
-    animation-name: modalOpen;
-	animation-duration: 1s;
-
-	@keyframes modalOpen {
-		from {opacity: 0}
-		to {opacity: 1}
-	}
-}
 
 * {
 	box-sizing: border-box;
@@ -24,8 +16,7 @@ body {
 .first-screen {
 	margin-top: 73px;
 	height: 640px;
-	max-width: 1400px;
-	width: 100vw;
+	@include width;
 	padding: 105px 135px 150px 150px;
 	background-image: url(../images/first-screen.jpg);
 	background-repeat: no-repeat;
@@ -223,6 +214,234 @@ body {
 	}
 }
 
+.brandbar {
+    @include width;
+    padding: 20px 150px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-bottom: 2px solid rgba(182, 182, 182, 0.5);
 
+    &__header {
+        font-size: 20px;
+        color: #333;
+        margin: 0;
+    }
+
+    &__subheader {
+        margin: 0;
+        width: 400px;
+        @include text-decoration;
+    }
+
+    &__icons {
+        padding: 10px 0;
+    }
+
+    &__icon {
+        text-decoration: none;
+        color: #ccc;
+        margin: 0 25px;
+        @include easeOut;
+
+        &:hover {
+            color: #454b56;
+        }
+    }
+}
+
+.features {
+    @include width;
+}
+
+.tabs {
+    padding: 140px 140px 110px 140px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    background: #f5f5f5;
+
+    &__box {
+        height: 110px;
+        width: 110px;
+        border: 1px solid #c6c6c6;
+        text-align: center;
+
+        &_orange {
+            background-color: #ff8421;
+            border-top-left-radius: 5px;
+    		border-top-right-radius: 5px;
+        }
+
+        &_dark {
+            background-color: #363636;
+        }
+
+        &_dark-bottom {
+            border-bottom-left-radius: 5px;
+    		border-bottom-right-radius: 5px;
+        }
+    }
+
+    &__number {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 40px 0;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+    &__header {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__desc {
+        @include text-decoration;
+        margin-top: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        background: #ff8421;
+        padding: 10px 20px;
+        border-radius: 3px;
+        @include easeOut;
+
+        &:hover {
+            background-color: #363636;
+            transform: scale(1.2);
+        }
+    }
+
+    &__image {
+        padding: 30px 0 0 100px;
+    }
+}
+
+.sublist {
+	padding: 100px 150px 130px 100px;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+
+	&__main {
+		text-align: left;
+		padding-left: 120px;
+	}
+
+	&__header {
+		margin: 0;
+		font-size: 20px;
+		line-height: 43px;
+		color: #212121;
+	}
+
+	&__subheader {
+		@include text-decoration;
+		margin: 20px 0 0 0;
+	}
+
+	&__options {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 15% 85%;
+	}
+
+	&__icon {
+		color: #ff8829;
+		height: 40px;
+		width: 40px;
+		border: 2px solid #ff8829;
+		border-radius: 50%;
+		padding: 5px 8px;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 14px;
+		line-height: 17px;
+		color: #212121;
+	}
+
+	&__desc {
+		margin: 5px 0 0 0;
+		@include text-decoration;
+	}
+}
+
+.standpic {
+	padding: 70px 100px 100px 150px;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+	background-color: #f5f5f5;
+
+	&__header {
+		margin: 35px 0 0 0;
+		font-size: 20px;
+		line-height: 43px;
+		color: #212121;
+	}
+
+	&__desc {
+		@include text-decoration;
+		max-width: 500px;
+	}
+
+	&__image {
+		width: 100%;
+		margin-left: 50px;
+	}
+}
+
+.about {
+	@include width;
+	padding: 100px 140px;
+	text-align: center;
+
+	&__header {
+		margin: 0;
+		font-size: 36px;
+		line-height: 43px;
+		color: #212121;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+	}
+
+	&__subheader {
+		@include text-decoration;
+	}
+
+	&__main {
+		margin-top: 80px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-gap: 30px;
+	}
+
+	&__icon {
+		margin: auto;
+		color: #ff8421;
+		height: 70px;
+		width: 70px;
+		border: 2px solid #ff8421;
+		border-radius: 50%;
+		padding: 15px 8px;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 24px;
+		color: #333;
+	}
+
+	&__desc {
+		@include text-decoration;
+	}
+}
 
 @import 'adaptive';

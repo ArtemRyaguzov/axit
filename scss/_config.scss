@@ -1,0 +1,32 @@
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+
+@mixin openModal {
+    animation-name: modalOpen;
+	animation-duration: 1s;
+
+	@keyframes modalOpen {
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+}
+
+@mixin width {
+    width: 100vw;
+    max-width: 1400px;
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin text-decoration {
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878b;
+}
