@@ -1,0 +1,49 @@
+.sublist {
+	padding: 100px 150px 130px 100px;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+
+	&__main {
+		text-align: left;
+		padding-left: 120px;
+	}
+
+	&__header {
+		margin: 0;
+		font-size: 20px;
+		line-height: 43px;
+		color: #212121;
+	}
+
+	&__subheader {
+		@include text-decoration;
+		margin: 20px 0 0 0;
+	}
+
+	&__options {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 15% 85%;
+	}
+
+	&__icon {
+		color: #ff8829;
+		height: 40px;
+		width: 40px;
+		border: 2px solid #ff8829;
+		border-radius: 50%;
+		padding: 5px 8px;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 14px;
+		line-height: 17px;
+		color: #212121;
+	}
+
+	&__desc {
+		margin: 5px 0 0 0;
+		@include text-decoration;
+	}
+}
