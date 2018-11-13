@@ -1,0 +1,61 @@
+.contact {
+    @include width;
+    padding: 100px 140px 80px 140px;
+    text-align: center;
+
+    &__header {
+        @include title-decoration;
+    }
+
+    &__subheader {
+        margin: 20px 0;
+        @include text-decoration;
+    }
+
+    &__form {
+        margin-top: 40px;
+    }
+
+    &__form-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+
+    &__form-input {
+        border: none;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 10px;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #bdbdbd;
+
+        &:focus {
+			outline: none;
+		}
+    }
+
+    &__form-message {
+        margin-top: 20px;
+    }
+
+    &__form-submit {
+        margin-top: 40px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        background: #ff9744;
+        padding: 10px 20px;
+        border-radius: 3px;
+        @include easeOut;
+
+        &:hover {
+            background-color: #363636;
+            transform: scale(1.2);
+        }
+    }
+
+}

@@ -4,13 +4,7 @@
 	text-align: center;
 
 	&__header {
-		margin: 5px 0;
-		font-size: 36px;
-		font-weight: 400;
-		line-height: 43px;
-		color: #212121;
-		font-family: 'Raleway', sans-serif;
-		text-transform: uppercase;
+		@include title-decoration;
 	}
 
 	&__subheader {

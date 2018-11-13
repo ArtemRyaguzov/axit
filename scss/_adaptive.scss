@@ -69,6 +69,14 @@
 		}
 	}
 
+	.testimonials {
+		padding: 100px 20px;
+
+		&__reviews {
+			grid-gap: 50px;
+		}
+	}
+
 }
 
 
@@ -189,6 +197,23 @@
 
 	.about {
 		padding: 100px 20px;
+	}
+
+	.contact {
+		padding: 100px 40px 80px 40px;
+
+		&__form {
+	       	padding: 0 40px;
+	    }
+
+		&__form-wrapper {
+	        grid-template-columns: 1fr;
+	        grid-gap: 20px;
+	    }
+
+		&__form-input {
+			max-width: 530px;
+		}
 	}
 
 }

@@ -1,0 +1,65 @@
+.testimonials {
+    @include width;
+    padding: 100px 170px 100px 170px;
+    text-align: center;
+
+    &__header {
+        @include title-decoration;
+    }
+
+    &__subheader {
+        margin: 20px 0;
+        @include text-decoration;
+    }
+
+    &__reviews {
+        margin-top: 55px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+		grid-gap: 100px;
+        justify-items: center;
+    }
+
+    &__review {
+        width: 270px;
+        text-align: left;
+    }
+
+    &__text {
+        @include text-decoration;
+        background-color: #f5f5f5;
+        padding: 20px 10px 30px 10px;
+        width: 270px;
+        font-style: italic;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        &:after {
+            content: "";
+            background: #f5f5f5;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 93%;
+            left: 8%;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+		grid-template-columns: 30% 70%;
+    }
+
+    &__name {
+        font-size: 20px;
+        color: #333333;
+        margin: 10px 0 0 0;
+    }
+
+    &__rank {
+        margin: 0;
+        @include text-decoration;
+    }
+}
