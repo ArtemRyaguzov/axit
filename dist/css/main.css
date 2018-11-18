@@ -27,7 +27,7 @@
     font-size: 14px; }
     .navbar__link:hover {
       color: #f48936;
-      font-size: 20px; }
+      font-size: 16px; }
   .navbar__sidemenu {
     display: none; }
   .navbar:after {
@@ -67,7 +67,8 @@
   box-sizing: border-box; }
 
 body {
-  width: 1400px;
+  width: 100vw;
+  max-width: 1400px;
   margin: auto;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif; }
@@ -96,7 +97,8 @@ body {
   .showcase__header {
     text-transform: uppercase;
     font-size: 36px;
-    font-weight: inherit; }
+    font-weight: inherit;
+    max-width: 550px; }
   .showcase__subheader {
     width: 500px;
     font-size: 1rem;
@@ -672,6 +674,8 @@ body {
     padding-top: 105px; }
   .showcase {
     margin-left: 40px; }
+    .showcase__header {
+      max-width: 500px; }
   .signup {
     margin-right: 20px; }
   .brandbar {
@@ -729,6 +733,9 @@ body {
     height: 100%;
     width: 100%;
     margin: 0; }
+    .showcase__header {
+      padding: 20px;
+      margin: auto; }
     .showcase__subheader {
       width: 70%;
       padding: 0 20px;

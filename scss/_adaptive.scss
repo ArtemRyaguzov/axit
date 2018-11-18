@@ -3,11 +3,14 @@
 	.first-screen {
 		padding: 0;
 		padding-top: 105px;
-
 	}
 
 	.showcase {
 		margin-left: 40px;
+
+		&__header {
+  		  	max-width: 500px;
+         }
 	}
 
 	.signup {
@@ -113,6 +116,11 @@
       height: 100%;
       width: 100%;
 	  margin: 0;
+
+	  &__header {
+		  padding: 20px;
+		  margin: auto;
+       }
 
       &__subheader {
           width: 70%;

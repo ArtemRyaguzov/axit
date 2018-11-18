@@ -7,7 +7,7 @@
 }
 
 body {
-	width: 1400px;
+	@include width;
 	margin: auto;
 	overflow-x:hidden;
 	font-family: 'Open Sans', sans-serif;

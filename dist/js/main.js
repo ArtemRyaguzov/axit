@@ -64,3 +64,29 @@ $('.modal__closebtn').click(function(){
 });
 
 // End of Navigation scripts
+
+// Typed.js init
+
+var typed = new Typed(".typed-text", {
+           strings: [
+             "modern axure template for beautiful prototypes"
+           ],
+           typeSpeed: 50,
+           showCursor: false,
+           startDelay: 1000
+     });
+
+     var typed = new Typed(".text-to-type", {
+                strings: [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+                ],
+                typeSpeed: 10,
+                showCursor: false,
+                startDelay: 1000
+          });
+
+// Wow.js init
+
+new WOW({
+    mobile: false
+}).init();

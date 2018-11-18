@@ -9,6 +9,9 @@
         integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
         crossorigin="anonymous">
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <link rel="stylesheet"
+  		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"/>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -18,7 +21,7 @@
             <nav class="navbar">
                 <div class="navbar__logo">
                     <a class="navbar__link" href="#first-screen">
-                        <img src="images/logo-navbar.png" height="30px" alt=""/>
+                        <img src="images/logo-navbar.png" height="30" alt="axit logo"/>
                     </a>
                 </div>
 
@@ -56,17 +59,14 @@
 
         <section id="first-screen" class="first-screen">
             <div class="showcase">
-                <img src="images/showcase-logo.png" height="60px" alt=""/>
-                <h1 class="showcase__header">modern axure template<br/>for beautiful prototypes</h1>
-                <img src="images/divider-white.png" alt=""/>
-                <p class="showcase__subheader">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                </p>
+                <img src="images/showcase-logo.png" height="60" alt="axit logo"/>
+                <h1 class="showcase__header typed-text"></h1>
+                <img src="images/divider-white.png" alt="separator"/>
+                <p class="showcase__subheader text-to-type"></p>
                 <a class="showcase__btn" href="#">Download</a>
             </div>
 
-            <div class="signup">
+            <div class="signup wow fadeInRight">
                 <h3 class="signup__header">
                     Try Your <span class="signup__free">free</span> Trial Today
                 </h3>
@@ -100,14 +100,14 @@
 
         <section class="brandbar">
             <div class="brandbar__text">
-                <h4 class="brandbar__header">Social Media</h4>
-                <p class="brandbar__subheader">
+                <h4 class="brandbar__header wow fadeInLeft">Social Media</h4>
+                <p class="brandbar__subheader wow fadeInLeft" data-wow-delay="1s">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean euismod bibendum laoreet.
                 </p>
             </div>
 
-            <div class="brandbar__icons">
+            <div class="brandbar__icons wow flipInX" data-wow-delay="1s">
                 <a class="brandbar__icon" href="#">
                     <i class="fab fa-facebook-f fa-3x"></i>
                 </a>
@@ -135,45 +135,45 @@
         <section id="features" class="features">
             <div class="tabs">
                 <div class="tabs__block">
-                    <div class="tabs__box tabs__box_orange">
+                    <div class="tabs__box tabs__box_orange wow bounceInUp" data-wow-offset="200">
                         <p class="tabs__number">tab 1</p>
                     </div>
-                    <div class="tabs__box tabs__box_dark">
+                    <div class="tabs__box tabs__box_dark wow bounceInUp" data-wow-offset="200">
                         <p class="tabs__number">tab 2</p>
                     </div>
-                    <div class="tabs__box tabs__box_dark tabs__box_dark-bottom">
+                    <div class="tabs__box tabs__box_dark tabs__box_dark-bottom wow bounceInUp" data-wow-offset="200">
                         <p class="tabs__number">tab 3</p>
                     </div>
                 </div>
                 <div class="tabs__main">
-                    <h4 class="tabs__header">
+                    <h4 class="tabs__header wow fadeInUp" data-wow-offset="200">
                         Tabs with soft transitioning effect.
                     </h4>
-                    <p class="tabs__desc">
+                    <p class="tabs__desc wow fadeInUp" data-wow-offset="200">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                         penatibus et magnis dis parturient montes.
                     </p>
-                    <p class="tabs__desc">
+                    <p class="tabs__desc wow fadeInUp" data-wow-offset="200">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         bibendum laoreet.
                     </p>
-                    <a class="tabs__link" href="#">Download</a>
+                    <a class="tabs__link wow fadeInUp" data-wow-offset="200" href="#">Download</a>
                 </div>
-                <div class="tabs__image">
-                    <img src="images/tabs-image.png" alt=""/>
+                <div class="tabs__image wow flipInY" data-wow-offset="200">
+                    <img src="images/tabs-image.png" alt="here should be cool image"/>
                 </div>
             </div>
 
             <div class="sublist">
                 <div>
-                    <img class="sublist__image" src="images/sublist-image.png" alt=""/>
+                    <img class="sublist__image wow fadeInLeft" data-wow-offset="400" src="images/sublist-image.png" alt="here should be cool image"/>
                 </div>
 
-                <div class="sublist__main">
+                <div class="sublist__main wow fadeInRight" data-wow-offset="400">
                     <h4 class="sublist__header">Sub list section</h4>
-                    <img src="images/divider_orange.png" alt=""/>
+                    <img src="images/divider_orange.png" alt="separator"/>
                     <p class="sublist__subheader">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus
@@ -209,36 +209,36 @@
 
             <div class="standpic">
                 <div>
-                    <h4 class="standpic__header">
+                    <h4 class="standpic__header wow fadeInUp" data-wow-offset="400">
                         Standard Picture Section
                     </h4>
-                    <img src="images/divider_orange.png" alt=""/>
-                    <p class="standpic__desc">
+                    <img class="standpic__divider wow fadeInLeft" data-wow-offset="400" src="images/divider_orange.png" alt="separator"/>
+                    <p class="standpic__desc wow fadeInUp" data-wow-offset="400">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
                         et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
                         natoque penatibus et magnis dis parturient montes.
                     </p>
-                    <p class="standpic__desc">
+                    <p class="standpic__desc wow fadeInUp" data-wow-offset="400">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         bibendum laoreet.
                     </p>
                 </div>
                 <div>
-                    <img class="standpic__image" src="images/standpic.png" alt=""/>
+                    <img class="standpic__image wow fadeInRight" data-wow-offset="400" src="images/standpic.png" alt="here should be cool image"/>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2 class="about__header">why this is awesome</h2>
-            <img src="images/divider_orange.png" alt=""/>
-            <p class="about__subheader">
+            <h2 class="about__header wow fadeInUp" data-wow-offset="300">why this is awesome</h2>
+            <img class="about__divider wow fadeInLeft" data-wow-offset="300" src="images/divider_orange.png" alt="separator"/>
+            <p class="about__subheader wow fadeInUp" data-wow-offset="300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
             <div class="about__main">
-                <div>
+                <div class="about__box wow fadeInLeft" data-wow-offset="300">
                     <div class="about__icon">
                         <i class="far fa-lightbulb fa-2x"></i>
                     </div>
@@ -249,7 +249,7 @@
                         dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div>
+                <div class="about__box wow fadeInUp" data-wow-offset="300">
                     <div class="about__icon">
                         <i class="fas fa-keyboard fa-2x"></i>
                     </div>
@@ -260,7 +260,7 @@
                         dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div>
+                <div class="about__box wow fadeInRight" data-wow-offset="300">
                     <div class="about__icon">
                         <i class="fas fa-bolt fa-2x"></i>
                     </div>
@@ -275,13 +275,13 @@
         </section>
 
         <section id="pricing" class="pricing">
-            <h2 class="pricing__header">pricing options</h2>
-            <img src="images/divider_orange.png" alt=""/>
-            <p class="pricing__subheader">
+            <h2 class="pricing__header wow fadeInUp" data-wow-offset="300">pricing options</h2>
+            <img class="pricing__divider wow fadeInLeft" data-wow-offset="300" src="images/divider_orange.png" alt="separator"/>
+            <p class="pricing__subheader wow fadeInUp" data-wow-offset="300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="pricing__cards">
-                <div class="pricing__card">
+                <div class="pricing__card wow zoomIn" data-wow-offset="350">
                     <h3 class="pricing__card-header">Basic</h3>
                     <h3 class="pricing__cost"><sub>$</sub>0</h3>
                     <p class="pricing__period">Free for Life</p>
@@ -293,7 +293,7 @@
                     <p class="pricing__chars">wordpress integration</p>
                     <p class="pricing__chars">email support</p>
                 </div>
-                <div class="pricing__card pricing__card_tall">
+                <div class="pricing__card pricing__card_tall wow zoomIn" data-wow-offset="300">
                     <h3 class="pricing__card-header">Professional</h3>
                     <h3 class="pricing__cost"><sub>$</sub>19</h3>
                     <p class="pricing__period">Monthly Payment</p>
@@ -305,7 +305,7 @@
                     <p class="pricing__chars">wordpress integration</p>
                     <p class="pricing__chars">email support</p>
                 </div>
-                <div class="pricing__card">
+                <div class="pricing__card wow zoomIn" data-wow-offset="350">
                     <h3 class="pricing__card-header">Enterprise</h3>
                     <h3 class="pricing__cost"><sub>$</sub>70</h3>
                     <p class="pricing__period">Monthly Payment</p>
@@ -321,14 +321,14 @@
         </section>
 
         <section id="reviews" class="testimonials">
-            <h2 class="testimonials__header">what our customers are saying</h2>
-            <img src="images/divider_orange.png" alt=""/>
-            <p class="testimonials__subheader">
+            <h2 class="testimonials__header wow fadeInUp">what our customers are saying</h2>
+            <img class="testimonials__divider wow fadeInLeft" src="images/divider_orange.png" alt="separator"/>
+            <p class="testimonials__subheader wow fadeInUp">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
             <div class="testimonials__reviews">
-                <div class="testimonials__review">
+                <div class="testimonials__review wow fadeInLeft" data-wow-offset="300">
                     <p class="testimonials__text">
                         Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
@@ -338,7 +338,7 @@
                     </p>
                     <div class="testimonials__wrapper">
                         <div>
-                            <img src="images/avatar.png" alt=""/>
+                            <img src="images/avatar.png" alt="reviewer image"/>
                         </div>
                         <div>
                             <h3 class="testimonials__name">Jeremy H.</h3>
@@ -347,7 +347,7 @@
                     </div>
                 </div>
 
-                <div class="testimonials__review">
+                <div class="testimonials__review wow fadeInUp" data-wow-offset="300">
                     <p class="testimonials__text">
                         Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
@@ -357,7 +357,7 @@
                     </p>
                     <div class="testimonials__wrapper">
                         <div>
-                            <img src="images/avatar.png" alt=""/>
+                            <img src="images/avatar.png" alt="reviewer image"/>
                         </div>
                         <div>
                             <h3 class="testimonials__name">John S.</h3>
@@ -366,7 +366,7 @@
                     </div>
                 </div>
 
-                <div class="testimonials__review">
+                <div class="testimonials__review wow fadeInRight" data-wow-offset="300">
                     <p class="testimonials__text">
                         Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
@@ -376,7 +376,7 @@
                     </p>
                     <div class="testimonials__wrapper">
                         <div>
-                            <img src="images/avatar.png" alt=""/>
+                            <img src="images/avatar.png" alt="reviewer image"/>
                         </div>
                         <div>
                             <h3 class="testimonials__name">Susan W.</h3>
@@ -387,35 +387,35 @@
             </div>
         </section>
 
-        <section class="custom">
-            <h2 class="custom__header">stylish axure design</h2>
-            <img src="images/divider-white.png" alt=""/>
-            <p class="custom__subheader">
+        <section class="custom wow fadeInRight">
+            <h2 class="custom__header wow fadeInUp" data-wow-offset="300">stylish axure design</h2>
+            <img class="custom__divider wow fadeInLeft" data-wow-offset="300" src="images/divider-white.png" alt="separator"/>
+            <p class="custom__subheader wow fadeInUp" data-wow-offset="300">
                 Use the sections you need, remove the ones you don't.
                 Create gorgeous prototypes faster than ever!
             </p>
-            <a class="custom__btn" href="#">Download</a>
+            <a class="custom__btn wow fadeInUp" data-wow-offset="300" href="#">Download</a>
         </section>
 
         <section id="contact" class="contact">
-            <h2 class="contact__header">contact us</h2>
-            <img src="images/divider_orange.png" alt=""/>
-            <p class="contact__subheader">
+            <h2 class="contact__header wow fadeInUp" data-wow-offset="300">contact us</h2>
+            <img class="contact__divider wow fadeInLeft" data-wow-offset="300" src="images/divider_orange.png" alt="separator"/>
+            <p class="contact__subheader wow fadeInUp" data-wow-offset="300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
             <form class="contact__form">
                 <div class="contact__form-wrapper">
                     <div>
-                        <input class="contact__form-input" type="text" placeholder="Name" required/>
-                        <input class="contact__form-input" type="email" placeholder="Email" required/>
-                        <input class="contact__form-input" type="text" placeholder="Subject" required/>
+                        <input class="contact__form-input wow fadeInLeft" data-wow-offset="300" type="text" placeholder="Name" required/>
+                        <input class="contact__form-input wow fadeInLeft" data-wow-offset="300" type="email" placeholder="Email" required/>
+                        <input class="contact__form-input wow fadeInLeft" data-wow-offset="300" type="text" placeholder="Subject" required/>
                     </div>
                     <div>
-                        <textarea class="contact__form-input contact__form-message" placeholder="Message" rows="10" required></textarea>
+                       <textarea class="contact__form-input contact__form-message wow fadeInRight" data-wow-offset="300" placeholder="Message" rows="10" required></textarea>
                     </div>
                 </div>
-                <input class="contact__form-submit" type="submit" value="Send Message"/>
+                <input class="contact__form-submit wow fadeInUp" data-wow-offset="200" type="submit" value="Send Message"/>
             </form>
         </section>
 
@@ -443,7 +443,7 @@
                     <i class="fas fa-rss"></i>
                 </a>
             </div>
-            
+
             &copy; 2018 Artem Ryaguzov for
             <br/>
             reg.ru frontend stage
@@ -458,6 +458,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
         </script>
+        <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
