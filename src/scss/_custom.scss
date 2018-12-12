@@ -1,13 +1,22 @@
 .custom {
+    /*
     @include width;
     padding: 70px 0 60px 0;
     text-align: center;
+    */
     background-image: url(../images/custom.jpg);
     background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.7);
 	background-blend-mode: darken;
+
+    &__holder {
+        @include width;
+        margin: auto;
+        padding: 70px 0 60px 0;
+        text-align: center;
+    }
 
     &__header {
         margin: 0 0 20px 0;
@@ -17,6 +26,11 @@
         font-weight: 400;
         font-family: 'Raleway', sans-serif;
         padding: 0 40px;
+    }
+
+    &__divider_white {
+        width: 64px;
+        margin: 25px auto 30px auto;
     }
 
     &__subheader {

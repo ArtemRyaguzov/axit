@@ -1,11 +1,18 @@
 .navbar {
     background: black;
     width: 100%;
+    /*
     max-width: 1400px;
+    */
     height: 73px;
     position: fixed;
     top: 0;
     z-index: 3;
+
+    &__holder {
+        max-width: 1400px;
+        margin: auto;
+    }
 
     &__logo {
         float: left;
@@ -37,6 +44,26 @@
             color: #f48936;
             font-size: 16px;
         }
+
+        &_hovered {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1px;
+                background-color: #f4f4f4;
+                transform: scaleX(0);
+                width: 100%;
+                top: 100%;
+                @include easeOut;
+            }
+
+            &:hover:before {
+                transform: scaleX(1);
+                background-color: #f48936;
+            }
+        }
     }
 
     &__sidemenu {
@@ -48,6 +75,33 @@
       clear: both;
     }
 }
+
+
+.active {
+    position: relative;
+    text-shadow: 0 0 10px white;
+
+    &:hover {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #fff;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        @include active;
+    }
+
+    &:hover:after {
+        transform: scaleX(0);
+    }
+}
+
+
 
 
 .mobile-nav {

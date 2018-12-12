@@ -1,9 +1,19 @@
 .brandbar {
+    /*
     @include width;
     padding: 20px 150px;
     display: grid;
     grid-template-columns: 40% 60%;
+    */
     border-bottom: 2px solid rgba(182, 182, 182, 0.5);
+
+    &__holder {
+        @include width;
+        margin: auto;
+        padding: 20px 150px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
 
     &__header {
         font-size: 20px;

@@ -65,18 +65,21 @@
 		}
 	}
 
-	&__signup-footer {
-		background: #ff9744;
-		margin-top: 10px;
-		padding: 15px;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
-
 	&__signup-submit {
 		text-decoration: none;
 		color: #fff;
 		font-weight: bold;
 		font-size: 15px;
+		background: #ff9744;
+		margin-top: 10px;
+		padding: 15px;
+		display: block;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		@include easeOut;
+
+		&:hover {
+			text-shadow: 0 0 10px white;
+		}
 	}
 }

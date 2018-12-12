@@ -1,11 +1,25 @@
 .pricing {
+    /*
     @include width;
     padding: 105px 140px 90px 140px;
     text-align: center;
+    */
     background-color: #f5f5f5;
+
+    &__holder {
+        @include width;
+        margin: auto;
+        padding: 105px 140px 90px 140px;
+        text-align: center;
+    }
 
     &__header {
         @include title-decoration;
+    }
+
+    &__divider_orange {
+        width: 64px;
+        margin: 22px auto 25px auto;
     }
 
     &__subheader {
@@ -31,7 +45,7 @@
         }
     }
 
-    &__card_tall {
+    &__card_type_tall {
         margin-top: 0;
     }
 

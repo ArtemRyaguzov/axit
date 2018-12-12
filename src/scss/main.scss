@@ -7,8 +7,11 @@
 }
 
 body {
+	/*
 	@include width;
 	margin: auto;
+	*/
+	margin: 0;
 	overflow-x:hidden;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -16,8 +19,10 @@ body {
 .first-screen {
 	margin-top: 73px;
 	height: 640px;
+	/*
 	@include width;
 	padding: 105px 135px 150px 150px;
+	*/
 	background-image: url(../images/first-screen.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -32,14 +37,22 @@ body {
     }
 }
 
+.holder {
+	@include width;
+	margin: auto;
+	padding: 105px 135px 150px 150px;
+}
+
 @import 'showcase';
 @import 'signup';
 @import 'modal';
 @import 'brandbar';
 
+/*
 .features {
     @include width;
 }
+*/
 
 @import 'tabs';
 @import 'sublist';

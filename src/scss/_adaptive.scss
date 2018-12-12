@@ -1,6 +1,13 @@
 @media (max-width: 1240px) {
 
+	/*
 	.first-screen {
+		padding: 0;
+		padding-top: 105px;
+	}
+	*/
+
+	.holder {
 		padding: 0;
 		padding-top: 105px;
 	}
@@ -18,7 +25,13 @@
 	}
 
 	.brandbar {
+		/*
 		padding: 20px 0;
+		*/
+		&__holder {
+			padding: 20px 0;
+		}
+
 
 		&__text {
 			margin-left: 40px;
@@ -26,7 +39,13 @@
 	}
 
 	.tabs {
+		/*
 		padding: 140px 40px 110px 40px;
+		*/
+
+		&__holder {
+			padding: 140px 40px 110px 40px;
+		}
 
 		&__link {
 			margin-top: 20px;
@@ -38,7 +57,13 @@
 	}
 
 	.sublist {
+		/*
 		padding: 100px 50px 130px 0;
+		*/
+
+		&__holder {
+			padding: 100px 50px 130px 0;
+		}
 
 		&__main {
 			padding: 0;
@@ -46,7 +71,13 @@
 	}
 
 	.standpic {
+		/*
 		padding: 70px 50px 100px 50px;
+		*/
+
+		&__holder {
+			padding: 70px 50px 100px 50px;
+		}
 
 		&__header {
 			margin: 15px 0 0 0;
@@ -58,7 +89,13 @@
 	}
 
 	.pricing {
+		/*
 		padding: 105px 20px 90px 20px;
+		*/
+
+		&__holder {
+			padding: 105px 20px 90px 20px;
+		}
 
 		&__cards {
 			flex-direction: column;
@@ -73,7 +110,13 @@
 	}
 
 	.testimonials {
+		/*
 		padding: 100px 20px;
+		*/
+
+		&__holder {
+			padding: 100px 20px;
+		}
 
 		&__reviews {
 			grid-gap: 50px;
@@ -101,9 +144,15 @@
           display: none;
         }
 
+	/*
 	.first-screen {
         padding-top: 50px;
     }
+	*/
+
+	.holder {
+		padding-top: 50px;
+	}
 
 	.signup {
 	      display: none;
@@ -122,6 +171,10 @@
 		  margin: auto;
        }
 
+	   &__divider_white {
+		   margin: 10px auto 25px auto;
+	   }
+
       &__subheader {
           width: 70%;
 		  padding: 0 20px;
@@ -130,8 +183,15 @@
     }
 
 	.brandbar {
+		/*
 		padding: 0 20px;
 		@include flex;
+		*/
+
+		&__holder {
+			padding: 0 20px;
+			@include flex;
+		}
 
 		&__text {
 			margin: 0;
@@ -148,7 +208,13 @@
 	}
 
 	.tabs {
+		/*
 		@include flex;
+		*/
+
+		&__holder {
+			@include flex;
+		}
 
 		&__block {
 			display: flex;
@@ -169,8 +235,15 @@
 	}
 
 	.sublist {
+		/*
 		@include flex;
 		padding: 100px 20px;
+		*/
+
+		&__holder {
+			@include flex;
+			padding: 100px 20px;
+		}
 
 		&__image {
 			width: 100%;
@@ -178,6 +251,10 @@
 
 		&__main {
 			text-align: inherit;
+		}
+
+		&__divider_orange {
+			margin: 10px auto;
 		}
 
 		&__subheader {
@@ -200,15 +277,37 @@
 	}
 
 	.standpic {
+		/*
 		@include flex;
+		*/
+
+		&__holder {
+			@include flex;
+		}
+
+		&__divider_orange {
+			margin: 10px auto 25px auto;
+		}
 	}
 
 	.about {
+		/*
 		padding: 100px 20px;
+		*/
+
+		&__holder {
+			padding: 100px 20px;
+		}
 	}
 
 	.contact {
+		/*
 		padding: 100px 40px 80px 40px;
+		*/
+
+		&__holder {
+			padding: 100px 40px 80px 40px;
+		}
 
 		&__form {
 	       	padding: 0 40px;
@@ -221,6 +320,74 @@
 
 		&__form-input {
 			max-width: 530px;
+		}
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.first-screen {
+		height: 740px;
+	}
+
+	.modal {
+		&__signup {
+			width: 280px;
+		}
+	}
+
+	.brandbar {
+		/*
+		padding: 0 40px;
+		*/
+
+		&__holder {
+			padding: 0 40px;
+		}
+
+		&__subheader {
+			margin-top: 10px;
+			width: 240px;
+		}
+
+		&__icon {
+			margin: 0 5px;
+		}
+
+	}
+
+	.tabs {
+		&__box {
+			height: 90px;
+			width: 90px;
+		}
+
+		&__number {
+			margin: 30px 0;
+		}
+
+		&__pic {
+			width: 100%;
+		}
+
+	}
+
+	.about {
+		&__main {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.pricing {
+		&__card {
+			width: 260px;
+		}
+	}
+
+	.footer {
+		&__links {
+			padding: 0 70px;
 		}
 	}
 

@@ -1,8 +1,19 @@
 .tabs {
+    /*
+    @include width;
     padding: 140px 140px 110px 140px;
     display: grid;
     grid-template-columns: 20% 40% 40%;
+    */
     background: #f5f5f5;
+
+    &__holder {
+        @include width;
+        margin: auto;
+        padding: 140px 140px 110px 140px;
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+    }
 
     &__box {
         height: 110px;
@@ -10,13 +21,13 @@
         border: 1px solid #c6c6c6;
         text-align: center;
 
-        &_orange {
+        &_color_orange {
             background-color: #ff8421;
             border-top-left-radius: 5px;
     		border-top-right-radius: 5px;
         }
 
-        &_dark {
+        &_color_dark {
             background-color: #363636;
         }
 

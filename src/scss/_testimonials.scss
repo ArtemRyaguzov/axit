@@ -1,10 +1,24 @@
 .testimonials {
+    /*
     @include width;
     padding: 100px 170px 100px 170px;
     text-align: center;
+    */
+
+    &__holder {
+        @include width;
+        margin: auto;
+        padding: 100px 170px 100px 170px;
+        text-align: center;
+    }
 
     &__header {
         @include title-decoration;
+    }
+
+    &__divider_orange {
+        width: 64px;
+        margin: 23px auto;
     }
 
     &__subheader {

@@ -13,6 +13,16 @@
 	}
 }
 
+@mixin active {
+    animation-name: activeLink;
+	animation-duration: 1s;
+
+	@keyframes activeLink {
+		from {width: 0}
+		to {width: 100}
+	}
+}
+
 @mixin width {
     width: 100vw;
     max-width: 1400px;
