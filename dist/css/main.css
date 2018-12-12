@@ -887,7 +887,7 @@ body {
       align-items: center;
       flex-wrap: nowrap;
       justify-content: space-around; }
-    .pricing__card_tall {
+    .pricing__card_type_tall {
       margin-top: 40px; }
   .testimonials {
     /*
