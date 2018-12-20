@@ -89,6 +89,8 @@
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s; }
+  .mobile-nav__type_opened {
+    width: 250px; }
   .mobile-nav__link {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
@@ -355,13 +357,13 @@ body {
     height: 110px;
     width: 110px;
     border: 1px solid #c6c6c6;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer;
+    background-color: #363636; }
     .tabs__box_color_orange {
       background-color: #ff8421;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px; }
-    .tabs__box_color_dark {
-      background-color: #363636; }
     .tabs__box_dark-bottom {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
@@ -397,6 +399,22 @@ body {
       transform: scale(1.2); }
   .tabs__image {
     padding: 30px 0 0 100px; }
+
+.blink {
+  animation-name: warpout;
+  animation-duration: 1s; }
+
+@keyframes warpout {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 
 .sublist {
   /*
@@ -1022,7 +1040,7 @@ body {
     .contact__holder {
       padding: 100px 40px 80px 40px; }
     .contact__form {
-      padding: 0 40px; }
+      padding: 0; }
     .contact__form-wrapper {
       grid-template-columns: 1fr;
       grid-gap: 20px; }

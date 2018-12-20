@@ -23,6 +23,19 @@
 	}
 }
 
+@mixin blinkEffect {
+    animation-name: warpout;
+    animation-duration: 1s;
+
+    @keyframes warpout {
+        0% {opacity: 1}
+        25% {opacity: 0.5}
+        50% {opacity: 0}
+        75% {opacity: 0.5}
+        100% {opacity: 1}
+    }
+}
+
 @mixin width {
     width: 100vw;
     max-width: 1400px;

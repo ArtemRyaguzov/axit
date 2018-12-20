@@ -117,6 +117,10 @@
 	padding-top: 60px;
 	transition: 0.5s;
 
+    &__type_opened {
+        width: 250px;
+    }
+
     &__link {
         padding: 10px 10px 10px 30px;
     	text-decoration: none;
